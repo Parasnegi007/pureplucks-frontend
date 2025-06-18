@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pure Plucks T&C</title>
+     <link rel="icon" type="image/png" href="assets/images/favicon.png">
+    <!-- GSAP for smooth animations -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+
+<!-- Font Awesome for fruit & blender icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="stylesheet" href="assets/additional.css">
+</head>
+
+<body>
+  <section class="text-carousel">
+  <div class="carousel-text">
+    <div class="announcement">"Cultivating Brilliance in Khadrala’s Verdant Heights"</div>
+    <div class="announcement">Get 20% off on your first purchase! <strong>Limited time only!</strong></div>
+    <div class="announcement">Exclusive fresh arrivals this season!</div>
+    <div class="announcement">Shop sustainably—handpicked quality guaranteed!</div>
+  </div>
+</section>
+
+<section class="header-top">  <!--dashboard on left-->
+        <div class="dashboard-container">
+            <a href="dashboard.html">
+                <i class="fa fa-user navlogo" aria-hidden="true"></i>
+            </a>
+        </div>
+        <div id="searchbar" class="searchbarcontainer">
+        <input type="text" id="searchbox" placeholder="Type to search eg. Honey Crisp" />
+         <button id="searchsubmit">
+        <i class="fa fa-search" aria-hidden="true"></i>
+    </button>
+   
+<div id="searchcontainer" style="display: none;">
+        <h2>Search Results</h2>
+        <div id="searchresults"></div>
+    </div>
+    </div>
+    <div class="top-logo">
+                <a href="index.html"><img src="assets/images/logo1.webp" alt="logo"></a>
+            
+            </div>
+            <div class="header-right-top">
+             <div class="wishlist-container">
+                <a href="wishlist.html">
+                    <i class="fa fa-heart navlogo" aria-hidden="true"></i>
+                    <span class="iconlabel">Wishlist</span>
+                </a>
+            </div>
+            <div class="cart-container">
+                <a href="cart.html">
+                    <i class="fa fa-shopping-cart navlogo" aria-hidden="true"></i>
+                    <span class="iconlabel">Cart</span>
+                </a>
+            </div>
+            </div>
+       
+</section>
+        <header>
+        
+        <!-- Menu Button for Mobile -->
+        <div id="menu-bar" class="menu-bar">
+            <button id="menu-toggle" class="menu-toggle">☰</button>
+        </div>
+    
+       <!-- Side Menu Container -->
+        <div id="side-menu" class="side-menu">
+              <!-- Add the Dashboard badge here -->
+            <div class="menu-logo">
+                <a href="index.html"><img src="assets/images/logo1.webp" alt="logo"></a>
+            
+            </div>
+            <div class="dashboard-container">
+                <a href="dashboard.html">
+                    <i class="fa fa-user user-logo" aria-hidden="true"></i>
+                     <span class="menuiconlabel">user</span>
+                </a>
+            </div>
+           
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="about.html">About Us</a></li>
+               
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+            
+        </div>
+    
+        <!-- Add the Dashboard badge here -->
+            <div class="mid-logo">
+                <a href="index.html"><img src="assets/images/logo1.webp" alt="logo"></a>
+            
+            </div>
+      
+        <!-- Navigation Links (Desktop) -->
+        <div class="nav-links">
+            <nav>
+                
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                   
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+                <!-- Search Bar (Hidden Initially) -->
+       <div id="search-bar" class="search-bar-container">
+        <input type="text" id="search-box" placeholder="Type to search eg. Honey Crisp" />
+    <button id="search-submit">
+        <i class="fa fa-search" aria-hidden="true"></i>
+    </button>
+
+    </div>
+    
+        <!-- Cart & Wishlist on the Right -->
+        <div class="header-right">
+            <!-- Search Button -->
+            <div id="search-btn">
+                <i class="fa fa-search nav-logo" aria-hidden="true"></i> 
+                <span class="icon-label">Search</span>
+            </div>
+            <div class="wishlist-container">
+                <a href="wishlist.html">
+                    <i class="fa fa-heart nav-logo" aria-hidden="true"></i>
+                    <span class="icon-label">Wishlist</span>
+                </a>
+            </div>
+            <div class="cart-container">
+                <a href="cart.html">
+                    <i class="fa fa-shopping-cart nav-logo" aria-hidden="true"></i>
+                    <span class="icon-label">Cart</span>
+                </a>
+                <span id="cart-count" class="cart-count"></span>
+            </div>
+        </div>
+    </header>
+    <div id="search-container" style="display: none;">
+        <h2>Search Results</h2>
+        <div id="search-results"></div>
+    </div>
+<section class="terms-conditions">
+  <h1>Terms & Conditions</h1>
+  <p><strong>Effective Date:</strong> June 12, 2025</p>
+
+  <p>Welcome to <strong>Pure Plucks</strong>, operated by <strong>RBO Ventures</strong>. By using our website and placing an order, you agree to the following terms and conditions:</p>
+
+  <h2>1. Eligibility</h2>
+  <p>You must be 18 years or older to make purchases on this website.</p>
+
+  <h2>2. Product Information</h2>
+  <ul>
+    <li>We grow and sell fresh agricultural produce directly from our farms.</li>
+    <li>Not all products are certified organic. Organic items will be explicitly labeled.</li>
+    <li>Images shown are for representation only and may slightly differ due to seasonal variations.</li>
+  </ul>
+
+  <h2>3. Orders & Pricing</h2>
+  <ul>
+    <li>Prices are subject to change without prior notice.</li>
+    <li>We reserve the right to cancel orders in case of pricing or inventory errors.</li>
+    <li>Once placed, orders cannot be modified or cancelled by the customer.</li>
+  </ul>
+
+  <h2>4. Shipping & Delivery</h2>
+  <ul>
+    <li>We aim to deliver fresh produce quickly and responsibly via our trusted delivery partners.</li>
+    <li>Delivery timelines may vary based on location and availability.</li>
+    <li>Delays due to natural conditions or external disruptions are not our liability.</li>
+  </ul>
+
+  <h2>5. Returns & Refunds</h2>
+  <p>Returns are not accepted for perishable products. Refunds are considered only after review by our support team and will be issued only in genuine, verifiable cases.</p>
+
+  <h2>6. Intellectual Property</h2>
+  <p>All content on this site—including text, images, and logos—is the intellectual property of RBO Ventures. Unauthorized use is prohibited.</p>
+
+  <h2>7. User Conduct</h2>
+  <ul>
+    <li>You must not use our site for unlawful purposes or transmit any harmful material.</li>
+    <li>Abuse, spamming, or fraudulent activity will result in account termination.</li>
+  </ul>
+
+  <h2>8. Limitation of Liability</h2>
+  <p>We are not liable for indirect damages, delays, or data losses. Use of our platform is at your own risk.</p>
+
+  <h2>9. Modifications to Terms</h2>
+  <p>We may revise these terms at any time. Updated terms will be posted on this page with the effective date.</p>
+
+  <h2>10. Governing Law</h2>
+  <p>These terms are governed by the laws of India. Any disputes will be handled under Indian jurisdiction.</p>
+
+  <h2>11. Contact</h2>
+  <p>For questions or concerns, contact us at: <a href="mailto:pureplucks@gmail.com">pureplucks@gmail.com</a>.</p>
+</section>
+
+ <footer class="site-footer">
+  <div class="footer-content">
+
+    <!-- Column 1: Logo + Sustainability -->
+    <div class="footer-branding">
+      <img src="assets/images/logo2.png" alt="Fresh Apples Logo" class="footer-logo" />
+      <p class="footer-sustainability">
+        Proudly promoting sustainable farming practices to protect our planet.
+      </p>
+    </div>
+
+    <!-- Column 2: Quick Links -->
+    <div class="footer-section">
+  <h3>Quick Links</h3>
+  <div class="footer-link-group">
+    <a href="about.html">About Us</a>
+    <a href="shop.html">Shop</a>
+    <a href="contact.html">Contact Us</a>
+    <a href="policy.html">Privacy Policy</a>
+    <a href="terms.html">Terms & Conditions</a>
+  </div>
+</div>
+
+<div class="footer-section">
+  <h3>Customer Support</h3>
+  <div class="footer-link-group">
+   <a href="contact.html#faq">FAQ</a>
+    <a href="contact.html">Help Center</a>
+    <a href="returns.html">Return Policy</a>
+     <a href="shippinhg-policy.html">Shipping Policy</a>
+  </div>
+</div>
+
+    <!-- Column 4: Social Media -->
+    <div class="footer-section">
+      <h3>Follow Us</h3>
+      <div class="footer-social-links">
+        <a href="https://www.facebook.com/profile.php?id=61577373083842" target="_blank" class="footer-social-icon"><i class="fab fa-facebook-f"></i> Facebook</a>
+        <a href="https://www.instagram.com/pure_plucks/" target="_blank" class="footer-social-icon"><i class="fab fa-instagram"></i> Instagram</a>
+        <a href="https://x.com/pure_plucks" target="_blank" class="footer-social-icon"><i class="fab fa-twitter"></i> Twitter</a>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy;  2025 RBO Ventures · Pure Plucks</p>
+  </div>
+</footer>
+<script>
+  // Wait for everything (images, fonts, etc.) to fully load
+  window.addEventListener("load", function () {
+    const hash = window.location.hash;
+    if (hash) {
+      const target = document.querySelector(hash);
+      if (target) {
+        // Delay and use requestAnimationFrame to ensure smooth scroll after full render
+        setTimeout(() => {
+          requestAnimationFrame(() => {
+            target.scrollIntoView({ behavior: "smooth", block: "start" });
+          });
+        }, 200);
+      }
+    }
+  });
+</script>
+
+<script src="assets/header.js"></script>    
+
+
+</body>
+</html>
